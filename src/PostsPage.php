@@ -3,9 +3,11 @@
 namespace Xzito\Posts;
 
 class PostsPage {
+  private $id;
   private $banner;
 
   public function __construct() {
+    $this->id = get_option('page_for_posts') ?? '';
     $this->set_banner();
   }
 
@@ -14,7 +16,6 @@ class PostsPage {
   }
 
   private function set_banner() {
-    $this->banner = get_field('posts_page', 'options')['banner'];
+    $this->banner = get_field('page_banner', $this->id);
   }
 }
-
