@@ -3,7 +3,7 @@
 /**
  * Plugin Name: Posts
  * Description: A WordPress plugin for Posts.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: James Boynton
  */
 
